@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 5.9.1"
+    "version": ">= 5.9.1",
+    "promptToConfigurePushNotifications": false
   },
   "build": {
     "development": {
@@ -25,6 +26,6 @@
       "android": {
         "releaseStatus": "draft"
       }
-   }
+    }
   }
 }
