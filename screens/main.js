@@ -8,31 +8,60 @@ import {
 import { useState, useEffect } from "react";
 import GuessTouchable from "../Components/GuessTouchable";
 import * as Speech from "expo-speech"
+import Slider from '@react-native-community/slider';
 
-DEFAULT_NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-DEFAULT_BUTTON_STATES = [0,0,0,0,0,0,0,0,0,0]
+DEFAULT_NUMBERS = [1, 2, 3];
+DEFAULT_BUTTON_STATES = [0,0,0];
+DEFAULT_NUMBER_RANGE = 3;
+
+selectListData = [
+    {key:'1', value:1},
+    {key:'2', value:2},
+    {key:'3', value:3},
+    {key:'4', value:4},
+    {key:'5', value:5},
+    {key:'6', value:6},
+    {key:'7', value:7},
+    {key:'8', value:8},
+    {key:'9', value:9},
+    {key:'10', value:10},
+    {key:'11', value:11},
+    {key:'12', value:12},
+    {key:'13', value:13},
+    {key:'14', value:14},
+    {key:'15', value:15}
+];
 
 const Main = () => {
-
     const [numbers, setNumbers] = useState([...DEFAULT_NUMBERS]);
     const [choiceButtonStates, setChoiceButtonStates] = useState(DEFAULT_BUTTON_STATES);
+    const [currNumberRange, setCurrNumberRange] = useState(DEFAULT_NUMBER_RANGE);
 
-    const shuffle = () => {
-        array = [...DEFAULT_NUMBERS];
-        for (let i = array.length - 1; i > 0; i--) {
+    const generateNumberRange = (length) => {
+        var newArray = [];
+        var buttonStates = [];
+        for(var i=1; i<=length; i++) {
+            newArray.push(i);
+            buttonStates.push(0);
+        }
+        const shuffledArray = shuffle(newArray, length)
+        setNumbers(shuffledArray);
+        setChoiceButtonStates(buttonStates);
+        setCurrNumberRange(length);
+
+    } 
+
+    const shuffle = (numberArray, length) => {
+        array = [...numberArray];
+        for (let i = length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
-        setNumbers(array);
+        return array;
     }
-
-    useEffect(() => {
-        shuffle();
-    }, [])
     
     const reset = () => {
-        setChoiceButtonStates([...DEFAULT_BUTTON_STATES]);
-        shuffle();
+        generateNumberRange(currNumberRange);
     }
 
     const speak = (number) => {
@@ -52,79 +81,60 @@ const Main = () => {
         else if (choiceButtonStates[btnID] == 2) return styles.guessTouchableRed;
     }
 
+    const _buttonRender = () => {
+        var renderButtons = [];
+        var j=0;
+
+        for (var i=0; i<currNumberRange/3; i++) {
+            renderButtons.push(
+                <View style={styles.choiceContainer} key={i}>
+                    <GuessTouchable 
+                        onPress={speak}
+                        buttonID={j}
+                        getStyle={_getTouchableColor}
+                        number={numbers[j]}
+                    />
+                    {numbers[j+1] !== undefined &&
+                        <GuessTouchable 
+                            onPress={speak}
+                            buttonID={j+1}
+                            getStyle={_getTouchableColor}
+                            number={numbers[j+1]}
+                        />
+                    }
+                    {numbers[j+2] !== undefined &&
+                        <GuessTouchable 
+                            onPress={speak}
+                            buttonID={j+2}
+                            getStyle={_getTouchableColor}
+                            number={numbers[j+2]}
+                        /> 
+                    }
+                </View>
+            );
+            j += 3
+        }
+        return renderButtons;
+
+    }
+ 
     return (
         <View style={styles.container}>
             <View style={styles.counterView}>
-                <Text style={styles.progressCounter}>Count to ten!</Text>
-            </View>
-            <View style={styles.choiceContainer}>
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={0}
-                    getStyle={_getTouchableColor}
-                    number={numbers[0]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={1}
-                    getStyle={_getTouchableColor}
-                    number={numbers[1]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={2}
-                    getStyle={_getTouchableColor}
-                    number={numbers[2]}
+                <Text style={styles.optionsTitle}>Number Range</Text>
+                <Text style={styles.optionsValue}>{currNumberRange}</Text>
+                <Slider
+                    style={styles.slider}
+                    minimumValue={1}
+                    maximumValue={30}
+                    step={1}
+                    onSlidingComplete={generateNumberRange}
+                    value={DEFAULT_NUMBER_RANGE}
+                    minimumTrackTintColor="#FFFFFF"
+                    maximumTrackTintColor="#000000"
                 />
             </View>
-            <View style={styles.choiceContainer}>
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={3}
-                    getStyle={_getTouchableColor}
-                    number={numbers[3]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={4}
-                    getStyle={_getTouchableColor}
-                    number={numbers[4]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={5}
-                    getStyle={_getTouchableColor}
-                    number={numbers[5]}
-                />
-            </View>
-            <View style={styles.choiceContainer}>
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={6}
-                    getStyle={_getTouchableColor}
-                    number={numbers[6]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={7}
-                    getStyle={_getTouchableColor}
-                    number={numbers[7]}
-                />
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={8}
-                    getStyle={_getTouchableColor}
-                    number={numbers[8]}
-                />
-            </View>
-            <View style={styles.choiceContainer}>
-                <GuessTouchable 
-                    onPress={speak}
-                    buttonID={9}
-                    getStyle={_getTouchableColor}
-                    number={numbers[9]}
-                />
-            </View>
+            {_buttonRender()}
             <View style={styles.resetView}>
                 <TouchableOpacity 
                     style={styles.resetTouchable}
@@ -154,6 +164,7 @@ const styles = StyleSheet.create({
     },
     counterView: {
         top: 55, 
+        flex: 1,
         position: "absolute",
         alignSelf: "center",
     },
@@ -273,6 +284,28 @@ const styles = StyleSheet.create({
         lineHeight: 40,
         fontWeight: 'bold',
     },
+    slider: {
+        width: 200, 
+        height: 40,
+        alignSelf: "center"
+    },
+    optionsTitle: {
+        color: "black",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 20,
+        lineHeight: 50,
+        fontWeight: 'bold',
+        textAlign: "center",
+    },
+    optionsValue: {
+        color: "black",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: "center",
+    }
     
 })
 
