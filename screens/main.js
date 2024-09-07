@@ -97,8 +97,8 @@ const Main = () => {
                     step={1}
                     onSlidingComplete={generateNumberRange}
                     value={DEFAULT_NUMBER_RANGE}
-                    minimumTrackTintColor="#FFFFFF"
-                    maximumTrackTintColor="#000000"
+                    minimumTrackTintColor="black"
+                    maximumTrackTintColor="black"
                 />
             </View>
             <View style={{top: 90}}>
