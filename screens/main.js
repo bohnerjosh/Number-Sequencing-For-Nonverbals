@@ -4,6 +4,8 @@ import {
     Text,
     View,
     TouchableOpacity,
+    Dimensions,
+    ScrollView
 } from "react-native";
 import { useState, useEffect } from "react";
 import GuessTouchable from "../Components/GuessTouchable";
@@ -13,24 +15,7 @@ import Slider from '@react-native-community/slider';
 DEFAULT_NUMBERS = [1, 2, 3];
 DEFAULT_BUTTON_STATES = [0,0,0];
 DEFAULT_NUMBER_RANGE = 3;
-
-selectListData = [
-    {key:'1', value:1},
-    {key:'2', value:2},
-    {key:'3', value:3},
-    {key:'4', value:4},
-    {key:'5', value:5},
-    {key:'6', value:6},
-    {key:'7', value:7},
-    {key:'8', value:8},
-    {key:'9', value:9},
-    {key:'10', value:10},
-    {key:'11', value:11},
-    {key:'12', value:12},
-    {key:'13', value:13},
-    {key:'14', value:14},
-    {key:'15', value:15}
-];
+SLIDER_MAX_RANGE = 50;
 
 const Main = () => {
     const [numbers, setNumbers] = useState([...DEFAULT_NUMBERS]);
@@ -85,34 +70,16 @@ const Main = () => {
         var renderButtons = [];
         var j=0;
 
-        for (var i=0; i<currNumberRange/3; i++) {
+        for (var i=0; i<currNumberRange; i++) {
             renderButtons.push(
-                <View style={styles.choiceContainer} key={i}>
-                    <GuessTouchable 
-                        onPress={speak}
-                        buttonID={j}
-                        getStyle={_getTouchableColor}
-                        number={numbers[j]}
-                    />
-                    {numbers[j+1] !== undefined &&
-                        <GuessTouchable 
-                            onPress={speak}
-                            buttonID={j+1}
-                            getStyle={_getTouchableColor}
-                            number={numbers[j+1]}
-                        />
-                    }
-                    {numbers[j+2] !== undefined &&
-                        <GuessTouchable 
-                            onPress={speak}
-                            buttonID={j+2}
-                            getStyle={_getTouchableColor}
-                            number={numbers[j+2]}
-                        /> 
-                    }
-                </View>
+                <GuessTouchable 
+                    onPress={speak}
+                    buttonID={i}
+                    getStyle={_getTouchableColor}
+                    number={numbers[i]}
+                    key={i}
+                />
             );
-            j += 3
         }
         return renderButtons;
 
@@ -126,7 +93,7 @@ const Main = () => {
                 <Slider
                     style={styles.slider}
                     minimumValue={1}
-                    maximumValue={30}
+                    maximumValue={SLIDER_MAX_RANGE}
                     step={1}
                     onSlidingComplete={generateNumberRange}
                     value={DEFAULT_NUMBER_RANGE}
@@ -134,7 +101,12 @@ const Main = () => {
                     maximumTrackTintColor="#000000"
                 />
             </View>
-            {_buttonRender()}
+            <View style={{top: 90}}>
+            <ScrollView style={styles.choiceContainer} contentContainerStyle={styles.choiceContainerContent} >
+                {_buttonRender()}
+            </ScrollView>
+            </View>
+            
             <View style={styles.resetView}>
                 <TouchableOpacity 
                     style={styles.resetTouchable}
@@ -174,30 +146,25 @@ const styles = StyleSheet.create({
         fontWeight: "400"
     },
     choiceContainer: {
-        justifyContent: "center",
+        alignSelf: "center",
         flexDirection: "row",
+        flexWrap: "wrap",
+        width: '95%',
+        height: '83%'
+    },
+    choiceContainerContent: {
+        justifyContent: "center",
+        alignSelf: "center",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        width: '95%',
+        height: '83%',
+        flex: 1,
+        ///backgroundColor: "red",
     },
     navContainer: {
         justifyContent: "center",
         alignItems: "center",
-    },
-    speakTouchable: {
-        alignItems: "center",
-        justifyContent: "center",
-        height: 75,
-        width: 150,
-        borderRadius: 20,
-        backgroundColor: "orange",
-        margin: 40,
-    },
-    resultTouchable: {
-        alignItems: "center",
-        justifyContent: "center",
-        height: 75,
-        width: 200,
-        borderRadius: 20,
-        backgroundColor: "black",
-        marginTop: 25,
     },
     resetTouchable: {
         flex: 1,
@@ -209,19 +176,6 @@ const styles = StyleSheet.create({
         backgroundColor: "black",
         margin: 15,
     },
-    dangerTouchable: {
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "transparent",
-        marginTop: 10,
-    },
-    dangerText: {
-        color: "red",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: 13,
-        fontWeight: 'bold',
-    },
     text: {
         color: "white",
         alignItems: "center",
@@ -230,40 +184,21 @@ const styles = StyleSheet.create({
         lineHeight: 50,
         fontWeight: 'bold',
     },
-    resultText: {
-        color: "black",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: 40,
-        lineHeight: 50,
-        fontWeight: 'bold',
-    },
     guessTouchableNormal: {
-        flex: 1,
+        //flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        height: 65,
-        maxWidth: 185,
+        height: 70,
+        width: 70,
         borderRadius: 20,
         backgroundColor: "black",
         margin: 15,
     },
-    guessTouchableRed: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        height: 65,
-        maxWidth: 185,
-        borderRadius: 20,
-        backgroundColor: "red",
-        margin: 15,
-    },
     guessTouchableGreen: {
-        flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        height: 65,
-        maxWidth: 185,
+        height: 70,
+        width: 70,
         borderRadius: 20,
         backgroundColor: "green",
         margin: 15,
@@ -276,18 +211,11 @@ const styles = StyleSheet.create({
         lineHeight: 40,
         fontWeight: 'bold',
     },
-    opacityText: {
-        color: "white",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: 32,
-        lineHeight: 40,
-        fontWeight: 'bold',
-    },
     slider: {
         width: 200, 
         height: 40,
-        alignSelf: "center"
+        alignSelf: "center",
+        flex: 1
     },
     optionsTitle: {
         color: "black",
