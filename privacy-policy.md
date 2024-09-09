@@ -2,7 +2,7 @@
 
   
 
-**Last updated September 06, 2024**
+**Last updated September 08, 2024**
 
   
 
@@ -34,7 +34,7 @@ This privacy notice for Joshua Bohner ("**Company**," "**we**," "**us**," or "**
 
   
 
-**Do we process any sensitive personal information?** We do not process sensitive personal information.
+**Do we process any sensitive personal information?** Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.
 
   
 
@@ -69,8 +69,6 @@ Want to learn more about what Joshua Bohner does with any information we collect
   
 
 ### **TABLE OF CONTENTS**
-
-  
 
 [1\. WHAT INFORMATION DO WE COLLECT?](#infocollect)
 
@@ -120,14 +118,6 @@ We collect personal information that you voluntarily provide to us when you expr
 
   
 
-**Application Data.** If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:
-
-*   _Mobile Device Access._ We may request access or permission to certain features from your mobile device. If you wish to change our access or permissions, you may do so in your device's settings.
-
-This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.
-
-  
-
 All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
 
   
@@ -146,6 +136,21 @@ All personal information that you provide to us must be true, complete, and accu
 _**In Short:** We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests._
 
   
+
+**_If you are located in the EU or UK, this section applies to you._**
+
+
+
+The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information: 
+
+*   **Consent.**   We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. Click [here](#withdrawconsent) to learn more.
+
+*   **Legal Obligations.**    We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
+
+*   **Vital Interests.**    We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
+
+
+
 
 **_If you are located in Canada, this section applies to you._**
 
@@ -193,8 +198,6 @@ We may need to share your personal information in the following situations:
   * Compliace with law(s)
   
 
-*   **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
-
   
 
 ### **5\. HOW LONG DO WE KEEP YOUR INFORMATION?** <a id="inforetain"></a>
@@ -229,22 +232,21 @@ We have implemented appropriate and reasonable technical and organizational secu
 
   
 
-**_In Short:_** _In some regions, such as Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time._
+**_In Short:_** _ Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada , you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence._
 
   
 
-In some regions (like Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)" below.
+In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the sectionn "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)" below.
 
   
 
 We will consider and act upon any request in accordance with applicable data protection laws.
 
-If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: [https://ec.europa.eu/justice/data-protection/bodies/authorities/index\_en.htm](https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm).
+If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your [Member State data protection authority](https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm) or [UK data protection authority](https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/). 
 
   
 
-If you are located in Switzerland, the contact details for the data protection authorities are available here: [https://www.edoeb.admin.ch/edoeb/en/home.html](https://www.edoeb.admin.ch/edoeb/en/home.html).
-
+If you are located in Switzerland, you may contact the [Federal Data Protection and Information Commissioner](https://www.edoeb.admin.ch/edoeb/en/home.html).
   
 
 **Withdrawing your consent:** If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)" below.
@@ -267,45 +269,11 @@ Most web browsers and some mobile operating systems and mobile applications incl
 
   
 
-### **9\. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?**<a id="caresidents"></a>
+### **9\. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?**<a id="caresidents"></a>
 
   
 
-**_In Short:_** _Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information._
-
-  
-
-California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
-
-  
-
-If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g., backups, etc.).
-
-  
-
-**CCPA Privacy Notice**
-
-  
-
-The California Code of Regulations defines a "resident" as:
-
-  
-
-(1) every individual who is in the State of California for other than a temporary or transitory purpose and
-
-(2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose
-
-  
-
-All other individuals are defined as "non-residents."
-
-  
-
-If this definition of "resident" applies to you, we must adhere to certain rights and obligations regarding your personal information.
-
-  
-
-**What categories of personal information do we collect?**
+**_In Short:_** _If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Montana, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below._
 
   
 
@@ -337,19 +305,16 @@ We may also collect other personal information outside of these categories throu
 
 *   Facilitation in the delivery of our Services and to respond to your inquiries.
 
-**How do we use and share your personal information?**
 
-  
+We will use and retain the collected personal information as needed to provide the Services for:
 
-More information about our data collection and sharing practices can be found in this privacy notice.
+*   Category H - We do not collect sensory data.
 
-  
 
-You may contact us by email at joshuabx443@proton.me, or by referring to the contact details at the bottom of this document.
 
-  
+### **California "Shine The Light Law**
 
-If you are using an authorized agent to exercise your right to opt out we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.
+California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)".
 
   
 
@@ -373,81 +338,58 @@ Joshua Bohner has not disclosed, sold, or shared any personal information to thi
 
   
 
-Right to request deletion of the data — Request to delete
+You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include: 
+
+
+*    **Right to know** whether or not we are processing your personal data
+
+*    **Right to access** your personal data
+
+*    **Right to correct** inaccuracies in your personal data
+
+*    **Right to request** the deletion of your personal data
+
+*    **Right to obtain a copy** of the personal data you previously shared with us
+
+*    **Right to non-discrimination** for exercising your rights
+
+*    **Right to opt out** of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California’s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")
+
+
+Depending upon the state where you live, you may also have the following rights:
+
+
+*    Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including California's and Delaware's privacy law)
+
+*    Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including Oregon’s privacy law)
+
+*    Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including California’s privacy law)
+
+*    Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including Florida’s privacy law)
+
+
+
+### **How to Exercise Your Rights**
+
+
+
+To exercise these rights, you can contact us by submitting a [data subject access request](https://app.termly.io/notify/9f4976cb-9380-4cfc-ab6f-15713fae1dad), by emailing us at joshuabx443@proton.me, or by referring to the contact details at the bottom of this document.
+
+Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.
+
+
+
+### **Request Verification**
 
   
 
-You can ask for the deletion of your personal information. If you ask us to delete your personal information, we will respect your request and delete your personal information, subject to certain exceptions provided by law, such as (but not limited to) the exercise by another consumer of his or her right to free speech, our compliance requirements resulting from a legal obligation, or any processing that may be required to protect against illegal activities.
+Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.
 
-  
 
-Right to be informed — Request to know
 
-  
+If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf. 
 
-Depending on the circumstances, you have a right to know:
 
-*   whether we collect and use your personal information;
-
-*   the categories of personal information that we collect;
-
-*   the purposes for which the collected personal information is used;
-
-*   whether we sell or share personal information to third parties;
-
-*   the categories of personal information that we sold, shared, or disclosed for a business purpose;
-
-*   the categories of third parties to whom the personal information was sold, shared, or disclosed for a business purpose;
-
-*   the business or commercial purpose for collecting, selling, or sharing personal information; and
-
-*   the specific pieces of personal information we collected about you.
-
-In accordance with applicable law, we are not obligated to provide or delete consumer information that is de-identified in response to a consumer request or to re-identify individual data to verify a consumer request.
-
-  
-
-Right to Non-Discrimination for the Exercise of a Consumer’s Privacy Rights
-
-  
-
-We will not discriminate against you if you exercise your privacy rights.
-
-  
-
-Right to Limit Use and Disclosure of Sensitive Personal Information
-
-  
-
-We do not process consumer's sensitive personal information.
-
-  
-
-Verification process
-
-  
-
-Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a communication method (e.g., phone or email) that you have previously provided to us. We may also use other verification methods as the circumstances dictate.
-
-  
-
-We will only use personal information provided in your request to verify your identity or authority to make the request. To the extent possible, we will avoid requesting additional information from you for the purposes of verification. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes. We will delete such additionally provided information as soon as we finish verifying you.
-
-  
-
-Other privacy rights
-
-*   You may object to the processing of your personal information.
-
-*   You may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the information.
-
-*   You can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
-
-*   You may request to opt out from future selling or sharing of your personal information to third parties. Upon receiving an opt-out request, we will act upon the request as soon as feasibly possible, but no later than fifteen (15) days from the date of the request submission.
-
-To exercise these rights, you can contact us by email at joshuabx443@proton.me, or by referring to the contact details at the bottom of this document. If you have a complaint about how we handle your data, we would like to hear from you.
-
-  
 
 ### **10\. DO WE MAKE UPDATES TO THIS NOTICE?** <a id="policyupdates"></a>
 
