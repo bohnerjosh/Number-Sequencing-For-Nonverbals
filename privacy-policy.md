@@ -312,7 +312,7 @@ We will use and retain the collected personal information as needed to provide t
 
 
 
-### **California "Shine The Light Law**
+### **California "Shine The Light" Law**
 
 California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)".
 
